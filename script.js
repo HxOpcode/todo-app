@@ -10,23 +10,23 @@ window.onload = function(){
 
     const li = document.createElement("li");
 
-    li.textContent = input.value;
-
-    const deleteButton = document.createElement("button");
-
-    deleteButton.textContent = "Delete";
-
-    deleteButton.onclick = function(){
-
-      li.remove();
-
-    }
-
-    li.appendChild(deleteButton);
+    li.innerHTML = input.value + ' <button class="delete-btn">Delete</button>';
 
     taskList.appendChild(li);
 
     input.value = "";
+
+    const deleteButtons = document.querySelectorAll(".delete-btn");
+
+    deleteButtons.forEach(function(btn){
+
+      btn.onclick = function(){
+
+        btn.parentElement.remove();
+
+      }
+
+    });
 
   });
 
