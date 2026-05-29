@@ -12,8 +12,22 @@ window.onload = function(){
 
     li.textContent = input.value;
 
+    const deleteButton = document.createElement("button");
+
+    deleteButton.textContent = "Delete";
+
+    deleteButton.onclick = function(){
+
+      li.remove();
+
+    }
+
+    li.appendChild(deleteButton);
+
     taskList.appendChild(li);
+
+    input.value = "";
 
   });
 
-}Learn JavaScript
+}
