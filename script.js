@@ -1,15 +1,19 @@
-const button = document.querySelector("button");
+window.onload = function(){
 
-const input = document.getElementById("taskInput");
+  const button = document.querySelector("button");
 
-const taskList = document.getElementById("taskList");
+  const input = document.getElementById("taskInput");
 
-button.addEventListener("click", function(){
+  const taskList = document.getElementById("taskList");
 
-  const li = document.createElement("li");
+  button.addEventListener("click", function(){
 
-  li.textContent = input.value;
+    const li = document.createElement("li");
 
-  taskList.appendChild(li);
+    li.textContent = input.value;
 
-});
+    taskList.appendChild(li);
+
+  });
+
+}Learn JavaScript
