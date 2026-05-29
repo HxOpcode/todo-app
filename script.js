@@ -11,6 +11,13 @@ window.onload = function(){
     const li = document.createElement("li");
 
     li.innerHTML = input.value + ' <button class="delete-btn">Delete</button>';
+    li.addEventListener("click", function(){
+
+  li.style.textDecoration = "line-through";
+
+  li.style.opacity = "0.6";
+
+});
 
     taskList.appendChild(li);
 
