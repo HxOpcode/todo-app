@@ -15,3 +15,26 @@ body{
   height:100vh;
 
 }
+input{
+
+  padding:10px;
+
+  border:none;
+
+  border-radius:8px;
+
+}
+
+button{
+
+  padding:10px;
+
+  border:none;
+
+  border-radius:8px;
+
+  background:#38bdf8;
+
+  color:white;
+
+}
